@@ -21,7 +21,7 @@ namespace OOP_Vlastni
         private void button1_Click(object sender, EventArgs e)
         {
             rum.Nalit(1);
-            rum.SetKelimekZaRum(true);
+            rum.SetKelimekNaRum(true);
             // nastaví kelímek na true, protože si kupuje rum
         }
 
@@ -47,7 +47,7 @@ namespace OOP_Vlastni
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (!rum.GetKelimekZaRum()) //výpis podle kelímku na rum
+            if (!rum.GetKelimekNaRum()) //výpis podle kelímku na rum
             {
                 MessageBox.Show(pivo.ToString() + "\n\n" + rum.ToString() + "\nNemáte kelímek na rum");
             }

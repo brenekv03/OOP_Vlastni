@@ -13,11 +13,11 @@ namespace OOP_Vlastni
         {
             this.kelimekNaRum = kelimekZaRum;
         }
-        public bool GetKelimekZaRum()
+        public bool GetKelimekNaRum()
         {
             return kelimekNaRum;
         }
-        public void SetKelimekZaRum(bool kelimekNaRum)
+        public void SetKelimekNaRum(bool kelimekNaRum)
         {
             this.kelimekNaRum = kelimekNaRum;
         }
