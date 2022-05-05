@@ -22,7 +22,8 @@ namespace OOP_Vlastni
         {
             rum.Nalit(1);
             rum.SetKelimekNaRum(true);
-            // nastaví kelímek na true, protože si kupuje rum
+            rum.SetPriplatekZaKelimek(2);
+            // nastaví kelímek na true, protože si kupuje rum a nastaví příplatek za kelímek
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -47,14 +48,7 @@ namespace OOP_Vlastni
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (!rum.GetKelimekNaRum()) //výpis podle kelímku na rum
-            {
-                MessageBox.Show(pivo.ToString() + "\n\n" + rum.ToString() + "\nNemáte kelímek na rum");
-            }
-            else
-            {
-                MessageBox.Show(pivo.ToString() + "\n\n" + rum.ToString() + "\nMáte kelímek na rum");
-            }
+                MessageBox.Show(pivo.ToString() + "\n\n" + rum.ToString());
         }
     }
 }
