@@ -30,25 +30,29 @@ namespace OOP_Vlastni
             }
         }
         //konstruktor
+
         public Pivo(int cena, string znacka, double objem)
         {
             this.cena = cena;
             Znacka = znacka;
             Objem = objem;
         }
-        //přičte cenu, počet kusů a kolik bylo nalito
-        public void Nalit(int kolikNalit)
+        //přičte cenu, počet kusů a kolik bylo nalito || virtual
+
+        public virtual void Nalit(int kolikNalit)
         {
             pocetKusu += kolikNalit;
             cenaCelkem += cena;
             celkemNalito += Objem;
         }
         //vrací hodnotu kolik se má zaplatit
+
         public int KolikZaplatit()
         {
             return cenaCelkem;
         }
         //zaplatí 
+
         public int Zaplatit(int kolikZaplatit)
         {
             if (cenaCelkem != 0)
@@ -68,6 +72,8 @@ namespace OOP_Vlastni
             }
             return cenaCelkem;
         }       
+        //override
+
         public override string ToString()
         {
             string s = "\nCena za jeden kus: " + cena + "\nZnačka alkoholu: " + Znacka + "\nObjem jednoho kusu: " + Objem + "\nKolik zaplatit: " + KolikZaplatit() + "\nKolik bylo nalito: " + pocetKusu + "\nNalitý objem: " + celkemNalito;

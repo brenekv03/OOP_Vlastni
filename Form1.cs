@@ -21,9 +21,7 @@ namespace OOP_Vlastni
         private void button1_Click(object sender, EventArgs e)
         {
             rum.Nalit(1);
-            rum.SetKelimekNaRum(true);
-            rum.SetPriplatekZaKelimek(2);
-            // nastaví kelímek na true, protože si kupuje rum a nastaví příplatek za kelímek
+            // nastaví kelímek na true, protože si kupuje rum 
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -9,30 +9,30 @@ namespace OOP_Vlastni
     class Rum : Pivo
     {
         private bool kelimekNaRum = false;
-        private int priplatekZaKelimek = 0;
+        //konstruktor
         public Rum(int cena, string znacka, double objem,bool kelimekZaRum): base(cena,znacka,objem)
         {
             this.kelimekNaRum = kelimekZaRum;
         }
         //get
-        public int GetPriplatekZaKelimek()
-        {
-            return priplatekZaKelimek;
-        }
+
         public bool GetKelimekNaRum()
         {
             return kelimekNaRum;
         }
         //set
-        public void SetPriplatekZaKelimek(int priplatekZaKelimek)
-        {
-            this.priplatekZaKelimek = priplatekZaKelimek;
-        }
+
         public void SetKelimekNaRum(bool kelimekNaRum)
         {
             this.kelimekNaRum = kelimekNaRum;
         }
+        //override
 
+        public override void Nalit(int kolikNalit)
+        {
+            SetKelimekNaRum(true);
+            base.Nalit(kolikNalit);
+        }
         public override string ToString()
         {
             string s = "\nNemáte kelímek na rum";
