@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Vlastni
 {
-    class Rum : Pivo
+    class Rum : Alkohol
     {
         private bool kelimekNaRum = false;
         //konstruktor

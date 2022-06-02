@@ -16,7 +16,7 @@ namespace OOP_Vlastni
         {
             InitializeComponent();
         }
-        Pivo pivo = new Pivo(30, "Plzeň", 0.5);
+        Pivo pivo = new Pivo(30, "Plzeň", 0.5,11);
         Rum rum = new Rum(75, "božkov", 0.2, false);
         private void button1_Click(object sender, EventArgs e)
         {
